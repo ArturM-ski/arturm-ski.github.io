@@ -10,11 +10,11 @@ html {
 }
 
 
-
+@media (min-width: 576px){
 
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 .wrapper {                   /*strona nie jest na całej szerokości */
@@ -35,7 +35,7 @@ nav {
 }
 
 .nav-items a {
-    padding: 0 30px;
+    padding: 0 20px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -50,7 +50,7 @@ nav {
 
 header {                                     /* zdjęcie na samej górze*/
     background-image: url('../img/warzywa.jpg');
-    height: 380px;
+    height: 280px;
     background-size: cover;
     background-position: bottom;
     position:relative;
@@ -74,7 +74,7 @@ header {                                     /* zdjęcie na samej górze*/
 }
 
 .text h1{                           /*tekst na środku górnego zdjęcia*/
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size:  4rem;
     text-shadow: 3px 3px 5px rgb(7, 7, 7);
 }
@@ -95,22 +95,22 @@ header {                                     /* zdjęcie na samej górze*/
 
 main {
     /* <!- margines między górnym zdjęciem a O mnie- -> */
-    margin: 60px 0; 
+    margin: 20px 0; 
 }
 
 
 
 .section-title {                /*Napis jaka dieta*/
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     /* font-style: italic; */
     text-align: center;
-    font-size: 4rem;
+    font-size: 2rem;
     color: red;
 }
 
 .about-me-info {            /*informacje pod  O MNIE*/
     margin-bottom: 10px;
-    font-size: 2.2rem;
+    font-size: 1.2rem;
     padding: 0px 50px;
     line-height: 1.6;
     text-indent: 20px;
@@ -118,7 +118,7 @@ main {
 }
 
 .projects {
-    margin: 60px auto;
+    margin: 20px auto;
  
 }
 
@@ -126,8 +126,8 @@ main {
     position: relative;
     margin-bottom: 20px;
     margin-left: 80px;
-    height: 100px;
-    width: 300px;
+    height: 80px;
+    width: 180px;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -140,20 +140,30 @@ main {
     margin-bottom: 10px;
     text-shadow: 3px 3px 5px black;
     transition: transform 300ms, color 300ms;
-    font-size: 1.8rem;
-    z-index:10
+    font-size: 1.2rem;
+    z-index:10;
 
 
 }
 
-.podsumowanie {                /*Napis jaka podsumowanie*/
+.podsumowanie {                
+    /* Napis jaka podsumowanie */
 
-    margin-top: 250px;
+    margin-top: 300px;
     margin-bottom: 10px;
     text-align: center;
-    font-size: 4rem;
+    font-size: 2rem;
     color: red;
 
+}
+.podsumowanie-info {            /*informacje pod  O MNIE*/
+     
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    padding: 0px 50px;
+    line-height: 1.6;
+    text-indent: 20px;
+   
 }
 
 a {
@@ -202,17 +212,19 @@ a:hover {   color: #FCA311;
     .dieta-ziemniaczana {
         background-image: url('../img/ziemniaczana4.jpg');
         float: left;
-        background-position: center;
+       
         }
 
     .dieta-wegetarianska {
             background-image: url('../img/wegetarianska.jpg');
             float: left;
+          
             }
 
     .dieta-IG {
             background-image: url('../img/niskiIG.jpg');
             float: left;
+          
             }
     
 
@@ -220,7 +232,7 @@ a:hover {   color: #FCA311;
 
 .contact {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .contact h3{
@@ -237,7 +249,9 @@ footer {
 }
 
 .zdjecia-diet{
-     padding:  20px; 
+     padding:  10px; 
+     margin-bottom: 20px;
+
   
 }
 
@@ -251,11 +265,10 @@ hr {
 }
 
 
-/* ------------------------------------------------------------- */
 
 .contact a  {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: blue;
     text-transform: lowercase;
 }
@@ -263,3 +276,273 @@ hr {
 
     color: red;
 }
+}
+
+
+/* ---------------------------------------------------------------------------------------------- */
+@media (min-width: 992px){
+
+    body {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.6rem;
+    }
+    
+    .wrapper {                   /*strona nie jest na całej szerokości */
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+    }
+    
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        height: 60px;
+        background-color: #14213D;
+        text-align: center;
+        line-height: 60px;
+    
+    }
+    
+    .nav-items a {
+        padding: 0 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #FFF;
+        letter-spacing: 1px;
+        transition: color 300ms;
+    }
+    
+    .nav-items a:hover {
+        color: #FCA311;
+    }
+    
+    header {                                     /* zdjęcie na samej górze*/
+        background-image: url('../img/warzywa.jpg');
+        height: 380px;
+        background-size: cover;
+        background-position: bottom;
+        position:relative;
+    }
+    
+    
+    .fade {                                 /*stylowanie wszystkich zdjęć*/
+        position:absolute;      
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.4);       /*cieniowanie*/
+    }
+    
+    .text {                         /*tekst na środku zdjęcia*/
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    
+    .text h1{                           /*tekst na środku górnego zdjęcia*/
+        margin-bottom: 10px;
+        font-size:  4rem;
+        text-shadow: 3px 3px 5px rgb(7, 7, 7);
+    }
+    
+    .text span {                        /*tekst na środku górnego zdjęcia*/
+        text-transform: uppercase;
+        color: #FCA311;
+    }
+    
+    
+    .text p {                     /*tekst na środku górnego zdjęcia pod HEATHLIVE*/
+        font-size: 2rem;
+        text-shadow: 3px 3px 5px rgb(7, 7, 7);
+        
+    }
+    
+    
+    
+    main {
+        /* <!- margines między górnym zdjęciem a O mnie- -> */
+        margin: 60px 0; 
+    }
+    
+    
+    
+    .section-title {                /*Napis jaka dieta*/
+        margin-bottom: 30px;
+        /* font-style: italic; */
+        text-align: center;
+        font-size: 4rem;
+        color: red;
+    }
+    
+    .about-me-info {            /*informacje pod  O MNIE*/
+        margin-bottom: 10px;
+        font-size: 2.2rem;
+        padding: 0px 50px;
+        line-height: 1.6;
+        text-indent: 20px;
+       
+    }
+    
+    .projects {
+        margin: 60px auto;
+     
+    }
+    
+    .project {                          /* stylowanie zdjęcia diety*/              
+        position: relative;
+        margin-bottom: 50px;
+        margin-left: 80px;
+        height: 100px;
+        width: 300px;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden;           /* zaokrąglone zdjęcie ma białe tło*/ 
+    }
+    
+    .text h3 {                                 /*napis w zdjęciu diety*/        
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        text-shadow: 3px 3px 5px black;
+        transition: transform 300ms, color 300ms;
+        font-size: 1.8rem;
+        z-index:10
+    
+    
+    }
+    
+    .podsumowanie {                /*Napis  podsumowanie*/
+   
+        /* margin-top: 380px; */
+        margin-top: 380px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 4rem;
+        color: red;
+    
+    }
+
+    .podsumowanie-info {            /*informacje pod  O MNIE*/
+     
+        margin-bottom: 10px;
+        font-size: 2.2rem;
+        padding: 0px 50px;
+        line-height: 1.6;
+        text-indent: 20px;
+       
+    }
+    
+    a {
+        text-decoration: none;
+        transition: transform 300ms;
+        color: white;
+        
+    }
+    
+    a:visited {text-decoration: none;
+                color: white
+    }
+    
+    a:hover {   color: #FCA311;
+        transform: scale(1.6);
+        color: #FCA311;
+    }
+    
+    
+    
+    
+    .project:hover h3 {
+        color: #FCA311;
+        transform: scale(1.2);
+    }
+    
+    
+    .dieta-wysokobialkowa {
+        background-image: url('../img/wysokobialkowa3.jpg');
+        float: left;
+        
+        }
+    
+    
+    
+        .dieta-bezglutenowa {
+            background-image: url('../img/bezglutenowa.jpg');
+            float: left;
+            }
+        
+        .dieta-niskoenergetyczna {
+            background-image: url('../img/niskoenergetyczna.jpg');
+            float: left;
+            }
+    
+        .dieta-ziemniaczana {
+            background-image: url('../img/ziemniaczana4.jpg');
+            float: left;
+            background-position: center;
+            }
+    
+        .dieta-wegetarianska {
+                background-image: url('../img/wegetarianska.jpg');
+                float: left;
+               
+                }
+    
+        .dieta-IG {
+                background-image: url('../img/niskiIG.jpg');
+                float: left;
+                
+                }
+        
+    
+    
+    
+    .contact {
+        text-align: center;
+        margin-top: 100px;
+    }
+    
+    .contact h3{
+        margin: 20px 0 5px;
+        text-transform: uppercase;
+    }
+    
+    footer {
+        padding: 20px 10px;
+        text-align: center;
+        background-color: #14213D;
+        color: #FFF;
+        font-style:normal;
+    }
+    
+    .zdjecia-diet{
+         padding:  20px; 
+      
+    }
+    
+    hr {
+        margin-bottom: 30px;
+        color: lightgrey
+    }
+    
+    .wybierz {
+        padding: 2px;
+    }
+    
+    
+    
+    .contact a  {
+        text-decoration: none;
+        font-size: 2rem;
+        color: blue;
+        text-transform: lowercase;
+    }
+    .adres {
+    
+        color: red;
+    }
+    }
