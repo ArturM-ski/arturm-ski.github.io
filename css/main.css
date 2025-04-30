@@ -10,7 +10,8 @@ html {
 }
 
 
-@media (min-width: 576px){  /*telefony*/
+@media (min-width: 48px){  /*telefony*/
+    
 
 body {
     font-family: 'Lato', sans-serif;
