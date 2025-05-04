@@ -10,11 +10,13 @@ html {
 }
 
 
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+@media (min-width: 480px){  /*telefony*/
 
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 
@@ -22,20 +24,20 @@ nav {
     position: sticky;
     top: 0;
     z-index: 10;
-    height: 60px;
+    height: 40px;
     background-color: #14213D;
     text-align: center;
-    line-height: 60px;
-    margin-bottom: 30px;
+    line-height: 30px;
+    margin-bottom: 0px;
 }
 
 .nav-items a {
-    padding: 0 30px;
+    padding: 0 5px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     color: #FFF;
-    letter-spacing: 1px;
+    letter-spacing: 0.1px;
     transition: color 300ms;
 }
 
@@ -45,14 +47,12 @@ nav {
 
 header {                                     /* zdjęcie na samej górze*/
     background-image: url('../img/wysokobialkowa3.jpg');
-    height: 380px;
+    
+    height: 280px;
+    background-size: cover;
     background-position: bottom;
     position:relative;
-    margin: auto;
-    width: 1080px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    overflow: hidden; 
+    
 }
 
 .fade {                                 /*stylowanie wszystkich zdjęć*/
@@ -75,7 +75,7 @@ header {                                     /* zdjęcie na samej górze*/
 
 .text h1{                           /*tekst na środku górnego zdjęcia*/
     margin-bottom: 10px;
-    font-size:  6rem;
+    font-size:  3.6rem;
     text-shadow: 13px 13px 15px rgb(7, 7, 7);
 }
 
@@ -85,16 +85,12 @@ header {                                     /* zdjęcie na samej górze*/
 }
 
 
-.text p {                     /*tekst na środku górnego zdjęcia pod HEATHLIVE*/
-    font-size: 2rem;
-    text-shadow: 3px 3px 5px rgb(7, 7, 7);
-    
-}
+
 
 main {
     /* <!- margines między górnym zdjęciem a Czym jest białko- -> */
     /* margin: 60px 0;  */
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 .wrapper {                   /*strona nie jest na całej szerokości */
     margin: 0 auto;
@@ -102,52 +98,48 @@ main {
     max-width: 1200px;
 }
 
-.o-diecie {                /*Napis jaka dieta*/
+.o-diecie {                /*Napis czym jest białko*/
     margin-bottom: 30px;
-    margin-top: 93px;
+    margin-top: 40px;
     font-style: bold;
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.6rem;
     color: red
 }
 
 
 
-.opis-diety-info {            /*informacje pod  O MNIE*/
+.opis-diety-info {            /*informacje pod  -Czym jest białko*/
     margin-bottom: 20px;
     margin-top: 10px;
-    font-size: 2.2rem;
-    padding: 0px 100px;
+    font-size: 1.6rem;
+    padding: 0px 20px;
     line-height: 1.6;
     text-indent: 20px;
 
    
 }
 
-.h3 {                /*Napis jaka dieta*/
+.h3 {                /*Napis -rodzaje białek*/
     margin-top: 40px;
-    margin-left: 100px;
+    margin-left: 50px;
     font-style: italic;
     text-align: left;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: red
     
 }
 
 hr {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: lightgrey;
 }
 
-img  {
-    height: 200px;
-    width: 200px;
 
-}
 
 ul {
-    margin-left: 150px;
-    font-size: 2rem;
+    margin-left: 50px;
+    font-size: 1.6rem;
 
 }
 
@@ -159,3 +151,291 @@ footer {
     font-style:normal;
     margin-top: 150px;
 }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    
+@media (min-width: 768px){  /*Tablety*/
+    
+    body {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.4rem;
+    }
+    
+    
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        height: 60px;
+        background-color: #14213D;
+        text-align: center;
+        line-height: 60px;
+        margin-bottom: 0px;
+    }
+    
+    .nav-items a {
+        padding: 0 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #FFF;
+        letter-spacing: 1px;
+        transition: color 300ms;
+    }
+    
+    .nav-items a:hover {
+        color: #FCA311;
+    }
+    
+    header {                                     /* zdjęcie na samej górze*/
+        background-image: url('../img/wysokobialkowa3.jpg');
+        height: 380px;
+        background-position: bottom;
+        position:relative;
+        margin: auto;
+        margin-bottom: 10px;
+        overflow: hidden; 
+    }
+    
+    .fade {                                 /*stylowanie wszystkich zdjęć*/
+        position:absolute;      
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.5);       /*cieniowanie*/
+    }
+    
+    
+    .text {                         /*tekst na środku zdjęcia*/
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    
+    }
+    
+    .text h1{                           /*tekst na środku górnego zdjęcia*/
+        margin-bottom: 10px;
+        font-size:  5rem;
+        text-shadow: 13px 13px 15px rgb(7, 7, 7);
+    }
+    
+    .text span {                        /*tekst na środku górnego zdjęcia*/
+        text-transform: uppercase;
+        color: #FCA311;
+    }
+    
+    
+
+    
+    main {
+        /* <!- margines między górnym zdjęciem a Czym jest białko- -> */
+        /* margin: 60px 0;  */
+        margin-bottom: 100px;
+    }
+    .wrapper {                   /*strona nie jest na całej szerokości */
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+    }
+    
+    .o-diecie {    /*Napis-czym jest białko*/
+        margin-bottom: 30px;
+        margin-top: 50px;
+        font-style: bold;
+        text-align: center;
+        font-size: 4rem;
+        color: red
+    }
+    
+    
+    
+    .opis-diety-info {            /*informacje pod  Czym jest białko*/
+        margin-bottom: 20px;
+        margin-top: 10px;
+        font-size: 2.2rem;
+        padding: 0px 20px;
+        line-height: 1.6;
+        text-indent: 20px;
+    
+       
+    }
+    
+    .h3 {                /*Napis Rodzaje białek*/
+        margin-top: 40px;
+        margin-left: 100px;
+        font-style: italic;
+        text-align: left;
+        font-size: 2.5rem;
+        color: red
+        
+    }
+    
+    hr {
+        margin-bottom: 30px;
+        color: lightgrey;
+    }
+    
+
+    
+    ul {
+        margin-left: 100px;
+        font-size: 2rem;
+    
+    }
+    
+    footer {
+        padding: 20px 10px;
+        text-align: center;
+        background-color: #14213D;
+        color: #FFF;
+        font-style:normal;
+        margin-top: 150px;
+    }
+    }
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    
+    @media (min-width: 992px){  /*laptopy*/
+    
+    body {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.6rem;
+    }
+    
+    
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        height: 60px;
+        background-color: #14213D;
+        text-align: center;
+        line-height: 60px;
+        margin-bottom: 0px;
+    }
+    
+    .nav-items a {
+        padding: 0 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #FFF;
+        letter-spacing: 1px;
+        transition: color 300ms;
+    }
+    
+    .nav-items a:hover {
+        color: #FCA311;
+    }
+    
+    header {                                     /* zdjęcie na samej górze*/
+        background-image: url('../img/wysokobialkowa3.jpg');
+        height: 380px;
+        background-position: bottom;
+        position:relative;
+        margin: auto;
+       
+        margin-bottom: 30px;
+
+        overflow: hidden; 
+    }
+    
+    .fade {                                 /*stylowanie wszystkich zdjęć*/
+        position:absolute;      
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.5);       /*cieniowanie*/
+    }
+    
+    
+    .text {                         /*tekst na środku zdjęcia*/
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    
+    }
+    
+    .text h1{                           /*tekst na środku górnego zdjęcia*/
+        margin-bottom: 10px;
+        font-size:  6rem;
+        text-shadow: 13px 13px 15px rgb(7, 7, 7);
+    }
+    
+    .text span {                        /*tekst na środku górnego zdjęcia*/
+        text-transform: uppercase;
+        color: #FCA311;
+    }
+    
+    
+
+    
+    main {
+        /* <!- margines między górnym zdjęciem a Czym jest białko- -> */
+        /* margin: 60px 0;  */
+        margin-bottom: 100px;
+    }
+    .wrapper {                   /*strona nie jest na całej szerokości */
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+    }
+    
+    .o-diecie {    /*Napis-czym jest białko*/
+        margin-bottom: 30px;
+        margin-top: 93px;
+        font-style: bold;
+        text-align: center;
+        font-size: 4rem;
+        color: red
+    }
+    
+    
+    
+    .opis-diety-info {            /*informacje pod  Czym jest białko*/
+        margin-bottom: 20px;
+        margin-top: 10px;
+        font-size: 2.2rem;
+        padding: 0px 50px;
+        line-height: 1.6;
+        text-indent: 20px;
+    
+       
+    }
+    
+    .h3 {                /*Napis Rodzaje białek*/
+        margin-top: 40px;
+        margin-left: 100px;
+        font-style: italic;
+        text-align: left;
+        font-size: 2.5rem;
+        color: red
+        
+    }
+    
+    hr {
+        margin-bottom: 30px;
+        color: lightgrey;
+    }
+    
+
+    
+    ul {
+        margin-left: 100px;
+        font-size: 2rem;
+    
+    }
+    
+    footer {
+        padding: 20px 10px;
+        text-align: center;
+        background-color: #14213D;
+        color: #FFF;
+        font-style:normal;
+        margin-top: 150px;
+    }
+    }
