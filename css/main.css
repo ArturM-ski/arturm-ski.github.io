@@ -9,12 +9,12 @@ html {
 	font-size: 62.5%;
 }
 
-@media (min-width: 280px) {
+@media (min-width: 320px) {
 	/*telefony*/
 
 	body {
 		font-family: "Lato", sans-serif;
-		font-size: 1.6rem;
+		font-size: 1rem;
 	}
 
 	.wrapper {
@@ -28,14 +28,14 @@ html {
 		position: sticky;
 		top: 0;
 		z-index: 10;
-		height: 60px;
+		height: 30px;
 		background-color: #14213d;
 		text-align: center;
-		line-height: 60px;
+		line-height: 20px;
 	}
 	/* napisy w nawigacji strony w telefonie zmininy padding na 10px*/
 	.nav-items a {
-		padding: 0 10px;
+		padding: 1px 5px;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: bold;
@@ -51,7 +51,7 @@ html {
 	header {
 		/* zdjęcie na samej górze*/
 		background-image: url("../img/warzywa.jpg");
-		height: 280px;
+		height: 180px;
 		background-size: cover;
 		background-position: bottom;
 		position: relative;
@@ -95,13 +95,13 @@ html {
 
 	main {
 		/* <!- margines między górnym zdjęciem a O mnie- -> */
-		margin: 20px 0;
+		margin: 10px 0;
 	}
 
 	.section-title {
 		/*Napis jaka dieta*/
-		margin-bottom: 20px;
-		padding: 10px;
+		margin-bottom: 5px;
+		padding: 5px;
 		/* font-style: italic; */
 		text-align: center;
 		font-size: 2rem;
@@ -109,25 +109,25 @@ html {
 	}
 
 	.about-me-info {
-		/*informacje pod  O MNIE*/
+		/*informacje pod  JAKA DIETA*/
 		margin-bottom: 10px;
 		font-size: 1.2rem;
-		padding: 0px 50px;
-		line-height: 1.6;
+		padding: 0px 20px; /*ZMIANA SZER OPISOW*/
+		line-height: 1.2;
 		text-indent: 20px;
 	}
 
 	.projects {
-		margin: 20px auto;
+		margin: 10px auto;
 	}
 
 	.project {
 		/* stylowanie zdjęcia diety w telefonie zmienione height width margin*/
 		position: relative;
-		margin-bottom: 10px;
-		margin-left: 40px;
+		margin-bottom: 15px;
+		margin-left: 25px;
 		height: 50px;
-		width: 150px;
+		width: 130px;
 		background-size: cover;
 		background-position: center;
 		text-align: center;
@@ -141,26 +141,26 @@ html {
 		margin-bottom: 10px;
 		text-shadow: 3px 3px 5px black;
 		transition: transform 300ms, color 300ms;
-		font-size: 1.2rem;
+		font-size: 1rem;
 		z-index: 10;
 	}
 
 	.podsumowanie {
 		/* Napis jaka podsumowanie */
 
-		margin-top: 200px;
+		margin-top: 20px;
 		margin-bottom: 10px;
 		text-align: center;
 		font-size: 2rem;
 		color: red;
 	}
 	.podsumowanie-info {
-		/*informacje pod  O MNIE*/
+		/*informacje pod  podsumowanie*/
 
 		margin-bottom: 10px;
 		font-size: 1.2rem;
-		padding: 0px 50px;
-		line-height: 1.6;
+		padding: 0px 20px; /*zmiana szer opisow*/
+		line-height: 1.2;
 		text-indent: 20px;
 	}
 
@@ -222,7 +222,7 @@ html {
 	}
 
 	.contact h3 {
-		margin: 20px 0 5px;
+		margin: 10px  5px;
 		text-transform: uppercase;
 	}
 
