@@ -31,7 +31,7 @@ html {
 		height: 30px;
 		background-color: #14213d;
 		text-align: center;
-		line-height: 20px;
+		line-height: 30px;
 	}
 	/* napisy w nawigacji strony w telefonie zmininy padding na 10px*/
 	.nav-items a {
@@ -113,7 +113,7 @@ html {
 		margin-bottom: 10px;
 		font-size: 1.2rem;
 		padding: 0px 20px; /*ZMIANA SZER OPISOW*/
-		line-height: 1.2;
+		line-height: 1.6;
 		text-indent: 20px;
 	}
 
@@ -125,7 +125,7 @@ html {
 		/* stylowanie zdjęcia diety w telefonie zmienione height width margin*/
 		position: relative;
 		margin-bottom: 15px;
-		margin-left: 25px;
+		margin-left: 40px;
 		height: 50px;
 		width: 130px;
 		background-size: cover;
