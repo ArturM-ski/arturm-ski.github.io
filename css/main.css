@@ -14,7 +14,7 @@ html {
 
 	body {
 		font-family: "Lato", sans-serif;
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 
 	.wrapper {
@@ -77,7 +77,7 @@ html {
 	.text h1 {
 		/*tekst na środku górnego zdjęcia*/
 		margin-bottom: 5px;
-		font-size: 4rem;
+		font-size: 3rem;
 		text-shadow: 3px 3px 5px rgb(7, 7, 7);
 	}
 
@@ -89,7 +89,7 @@ html {
 
 	.text p {
 		/*tekst na środku górnego zdjęcia pod HEATHLIVE*/
-		font-size: 2rem;
+		font-size: 1.6rem;
 		text-shadow: 3px 3px 5px rgb(7, 7, 7);
 	}
 
@@ -104,15 +104,15 @@ html {
 		padding: 5px;
 		/* font-style: italic; */
 		text-align: center;
-		font-size: 2rem;
+		font-size: 2.6rem;
 		color: red;
 	}
 
 	.about-me-info {
 		/*informacje pod  JAKA DIETA*/
 		margin-bottom: 10px;
-		font-size: 1.2rem;
-		padding: 0px 20px; /*ZMIANA SZER OPISOW*/
+		font-size: 1.6rem;
+		padding: 0px 10px; /*ZMIANA SZER OPISOW*/
 		line-height: 1.6;
 		text-indent: 20px;
 	}
@@ -146,21 +146,21 @@ html {
 	}
 
 	.podsumowanie {
-		/* Napis jaka podsumowanie */
+		/* Napis  podsumowanie */
 
-		margin-top: 20px;
-		margin-bottom: 10px;
+		margin-top: 40px;
+		margin-bottom: 20px;
 		text-align: center;
-		font-size: 2rem;
+		font-size: 2.6rem;
 		color: red;
 	}
 	.podsumowanie-info {
 		/*informacje pod  podsumowanie*/
 
 		margin-bottom: 10px;
-		font-size: 1.2rem;
-		padding: 0px 20px; /*zmiana szer opisow*/
-		line-height: 1.2;
+		font-size: 1.6rem;
+		padding: 0px 10px; /*zmiana szer opisow*/
+		line-height: 1.6;
 		text-indent: 20px;
 	}
 

@@ -12,14 +12,14 @@ html {
 @media (min-width: 320px) {
 	body {
 		font-family: "Lato", sans-serif;
-		font-size: 0.8rem;
+		font-size: 1.2em;
 	}
 
 	nav {
 		position: sticky;
 		top: 0;
 		z-index: 10;
-		height: 25px;
+		height: 60px;
 		background-color: #14213d;
 		text-align: center;
 		line-height: 25px; /*pozycja tekstu nawi w pionie*/
@@ -104,7 +104,7 @@ html {
 		padding: 15px 5px;
 		font-style: bold;
 		text-align: center;
-		font-size: 2rem;
+		font-size: 2.6rem;
 		color: red;
 	}
 
@@ -112,7 +112,7 @@ html {
 		/*informacje pod  O MNIE*/
 		margin-bottom: 10px;
 		margin-top: 5px;
-		font-size: 1.2rem;
+		font-size: 1.6rem;
 		padding: 0px 10px;
 		line-height: 1.6;
 		text-indent: 20px;
@@ -120,10 +120,10 @@ html {
 	.h3 {
 		/*Napis jaka dieta*/
 		margin-top: 40px;
-		margin-left: 40px;
+		margin-left: 10px;
 		font-style: italic;
 		text-align: left;
-		font-size: 1.6rem;
+		font-size: 2rem;
 		color: red;
 	}
 
