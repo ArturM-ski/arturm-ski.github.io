@@ -191,7 +191,8 @@ html {
 	header {
 		/* zdjęcie na samej górze*/
 		background-image: url("../img/wysokobialkowa3.jpg");
-		height: 380px;
+		height: 280px;
+		
 		background-position: bottom;
 		position: relative;
 		margin: auto;
@@ -326,9 +327,7 @@ html {
 		background-position: bottom;
 		position: relative;
 		margin: auto;
-
 		margin-bottom: 30px;
-
 		overflow: hidden;
 	}
 

@@ -120,7 +120,7 @@ html {
 	.h3 {
 		/*Napis jaka dieta*/
 		margin-top: 40px;
-		margin-left: 10px;
+		margin-left: 40px;
 		font-style: italic;
 		text-align: left;
 		font-size: 2rem;
@@ -205,7 +205,7 @@ html {
 	header {
 		/* zdjęcie na samej górze*/
 		background-image: url("../img/bezglutenowa.jpg");
-		height: 180px;
+		height: 280px;
 		background-position: center;
 		position: relative;
 		margin: auto;
@@ -243,11 +243,6 @@ html {
 		color: #fca311;
 	}
 
-	main {
-		/* <!- margines między górnym zdjęciem a Czym jest gluten- -> */
-		/* margin: 60px 0;  */
-		margin-bottom: 100px;
-	}
 	.wrapper {
 		/*strona nie jest na całej szerokości */
 		margin: 0 auto;

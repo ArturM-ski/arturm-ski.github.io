@@ -5,198 +5,500 @@
 }
 
 html {
-    scroll-behavior: smooth;  /*płynne przewijanie strony*/
-    font-size: 62.5%;
+	scroll-behavior: smooth; /*płynne przewijanie strony*/
+	font-size: 62.5%;
 }
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+@media (min-width: 320px) {
+	body {
+		font-family: "Lato", sans-serif;
+		font-size: 1.2rem;
+	}
 
+	nav {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		height: 60px;
+		background-color: #14213d;
+		text-align: center;
+		line-height: 25px;
+		margin-bottom: 0px;
+	}
 
+	.nav-items a {
+		padding: 5px 5px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #fff;
+		letter-spacing: 1px;
+		transition: color 300ms;
+	}
 
-body {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.6rem;
+	.nav-items a:hover {
+		color: #fca311;
+	}
+
+	header {
+		/* zdjęcie na samej górze*/
+		background-image: url("../img/niskoenergetyczna.jpg");
+		height: 180px;
+		background-position: center;
+		position: relative;
+		margin: auto;
+		margin-bottom: 10px;
+		overflow: hidden;
+	}
+
+	.fade {
+		/*stylowanie wszystkich zdjęć*/
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0, 0.5); /*cieniowanie*/
+	}
+
+	.text {
+		/*tekst na środku zdjęcia*/
+		position: absolute;
+		color: white;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.text h1 {
+		/*tekst na środku górnego zdjęcia*/
+		margin-bottom: 10px;
+		font-size: 2.6rem;
+		text-shadow: 13px 13px 15px rgb(7, 7, 7);
+	}
+
+	.text span {
+		/*tekst na środku górnego zdjęcia*/
+		text-transform: uppercase;
+		color: #fca311;
+	}
+
+	.text p {
+		/*tekst na środku górnego zdjęcia pod HEATHLIVE*/
+		font-size: 2rem;
+		text-shadow: 3px 3px 5px rgb(7, 7, 7);
+	}
+
+	.wrapper {
+		/*strona nie jest na całej szerokości */
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1200px;
+	}
+
+	.o-diecie {
+		/*Napis jaka dieta*/
+		padding: 15px 5px;
+		font-style: bold;
+		text-align: center;
+		font-size: 2.6rem;
+		color: red;
+	}
+
+	.opis-diety-info {
+		/*informacje pod  O MNIE*/
+		margin-bottom: 10px;
+		margin-top: 5px;
+		font-size: 1.6rem;
+		padding: 0px 10px;
+		line-height: 1.6;
+		text-indent: 20px;
+	}
+
+	.h3 {
+		/*Napis jaka dieta*/
+		margin-top: 40px;
+		margin-left: 100px;
+		font-style: italic;
+		text-align: left;
+		font-size: 2.5rem;
+		color: red;
+	}
+
+	hr {
+		margin-bottom: 30px;
+		color: lightgrey;
+	}
+
+	table {
+		padding: 5px 15px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		margin-bottom: 30px;
+		border: 0px solid black;
+		border-spacing: 0;
+		width: auto;
+	}
+
+	/* ramka w komórkach tabeli, padding do zmiany wielkości komorek */
+	td {
+		padding: 5px 5px;
+		border: 1px solid black;
+		font-size: 1.2rem;
+	}
+
+	.lewa {
+		background-color: #f4f1de;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.4rem;
+	}
+
+	.prawa {
+		font-style: italic;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.gora {
+		background-color: #ffd60a;
+		text-align: center;
+		font-size: 1.8rem;
+		font-weight: bold;
+		padding: 5px;
+	}
+
+	footer {
+		padding: 10px 10px;
+		text-align: center;
+		background-color: #14213d;
+		color: #fff;
+		font-style: normal;
+		margin-top: 20px;
+	}
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+@media (min-width: 768px) {
+	body {
+		font-family: "Lato", sans-serif;
+		font-size: 1.4rem;
+	}
+
+	nav {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		height: 40px;
+		background-color: #14213d;
+		text-align: center;
+		line-height: 35px;
+		margin-bottom: 0px;
+	}
+
+	.nav-items a {
+		padding: 5px 15px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #fff;
+		letter-spacing: 1px;
+		transition: color 300ms;
+	}
+
+	.nav-items a:hover {
+		color: #fca311;
+	}
+
+	header {
+		/* zdjęcie na samej górze*/
+		background-image: url("../img/niskoenergetyczna.jpg");
+		height: 280px;
+		background-position: center;
+		position: relative;
+		margin: auto;
+		margin-bottom: 10px;
+		overflow: hidden;
+	}
+
+	.fade {
+		/*stylowanie wszystkich zdjęć*/
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0, 0.5); /*cieniowanie*/
+	}
+
+	.text {
+		/*tekst na środku zdjęcia*/
+		position: absolute;
+		color: white;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.text h1 {
+		/*tekst na środku górnego zdjęcia*/
+		margin-bottom: 10px;
+		font-size: 5rem;
+		text-shadow: 13px 13px 15px rgb(7, 7, 7);
+	}
+
+	.text span {
+		/*tekst na środku górnego zdjęcia*/
+		text-transform: uppercase;
+		color: #fca311;
+	}
+
+	.wrapper {
+		/*strona nie jest na całej szerokości */
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1200px;
+	}
+
+	.o-diecie {
+		/*Napis jaka dieta*/
+		padding: 25px 35px;
+		font-style: bold;
+		text-align: center;
+		font-size: 4rem;
+		color: red;
+	}
+
+	.opis-diety-info {
+		/*informacje pod  O MNIE*/
+		margin-bottom: 10px;
+		margin-top: 10px;
+		font-size: 2.2rem;
+		padding: 0px 20px;
+		line-height: 1.6;
+		text-indent: 20px;
+	}
+
+	.h3 {
+		/*Napis jaka dieta*/
+		margin-top: 40px;
+		margin-left: 100px;
+		font-style: italic;
+		text-align: left;
+		font-size: 2.5rem;
+		color: red;
+	}
+
+	hr {
+		margin-bottom: 30px;
+		color: lightgrey;
+	}
+
+	table {
+		padding: 5px 25px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		margin-bottom: 30px;
+		border: 0px solid black;
+		border-spacing: 0;
+		width: auto;
+	}
+
+	/* ramka w komórkach tabeli, padding do zmiany wielkości komorek */
+	td {
+		padding: 5px 5px;
+		border: 1px solid black;
+		font-size: 1.2rem;
+	}
+
+	.lewa {
+		background-color: #f4f1de;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.4rem;
+	}
+
+	.prawa {
+		font-style: italic;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.gora {
+		background-color: #ffd60a;
+		text-align: center;
+		font-size: 1.8rem;
+		font-weight: bold;
+		padding: 5px;
+	}
+
+	footer {
+		padding: 10px 10px;
+		text-align: center;
+		background-color: #14213d;
+		color: #fff;
+		font-style: normal;
+		margin-top: 20px;
+	}
 }
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+@media (min-width: 992px) {
+	body {
+		font-family: "Lato", sans-serif;
+		font-size: 1.4rem;
+	}
 
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    height: 60px;
-    background-color: #14213D;
-    text-align: center;
-    line-height: 60px;
-    margin-bottom: 30px;
-}
+	nav {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		height: 40px;
+		background-color: #14213d;
+		text-align: center;
+		line-height: 35px;
+		margin-bottom: 0px;
+	}
 
-.nav-items a {
-    padding: 0 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #FFF;
-    letter-spacing: 1px;
-    transition: color 300ms;
-}
+	.nav-items a {
+		padding: 5px 15px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #fff;
+		letter-spacing: 1px;
+		transition: color 300ms;
+	}
 
-.nav-items a:hover {
-    color: #FCA311;
-}
+	.nav-items a:hover {
+		color: #fca311;
+	}
 
-header {                                     /* zdjęcie na samej górze*/
-    background-image: url('../img/niskoenergetyczna.jpg');
-    height: 380px;
-    background-position: center;
-    position:relative;
-    margin: auto;
-    width: 1080px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    overflow: hidden; 
-}
+	header {
+		/* zdjęcie na samej górze*/
+		background-image: url("../img/niskoenergetyczna.jpg");
+		height: 280px;
+		background-position: center;
+		position: relative;
+		margin: auto;
+		margin-bottom: 10px;
+		overflow: hidden;
+	}
 
-.fade {                                 /*stylowanie wszystkich zdjęć*/
-    position:absolute;      
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0, 0.5);       /*cieniowanie*/
-}
+	.fade {
+		/*stylowanie wszystkich zdjęć*/
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0, 0.5); /*cieniowanie*/
+	}
 
+	.text {
+		/*tekst na środku zdjęcia*/
+		position: absolute;
+		color: white;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 
-.text {                         /*tekst na środku zdjęcia*/
-    position: absolute;
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+	.text h1 {
+		/*tekst na środku górnego zdjęcia*/
+		margin-bottom: 10px;
+		font-size: 5rem;
+		text-shadow: 13px 13px 15px rgb(7, 7, 7);
+	}
 
-}
+	.text span {
+		/*tekst na środku górnego zdjęcia*/
+		text-transform: uppercase;
+		color: #fca311;
+	}
 
-.text h1{                           /*tekst na środku górnego zdjęcia*/
-    margin-bottom: 10px;
-    font-size:  6rem;
-    text-shadow: 13px 13px 15px rgb(7, 7, 7);
-}
+	.wrapper {
+		/*strona nie jest na całej szerokości */
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1200px;
+	}
 
-.text span {                        /*tekst na środku górnego zdjęcia*/
-    text-transform: uppercase;
-    color: #FCA311;
-}
+	.o-diecie {
+		/*Napis jaka dieta*/
+		padding: 25px 35px;
+		font-style: bold;
+		text-align: center;
+		font-size: 4rem;
+		color: red;
+	}
 
+	.opis-diety-info {
+		/*informacje pod  O MNIE*/
+		margin-bottom: 10px;
+		margin-top: 10px;
+		font-size: 2.2rem;
+		padding: 0px 20px;
+		line-height: 1.6;
+		text-indent: 20px;
+	}
 
-.text p {                     /*tekst na środku górnego zdjęcia pod HEATHLIVE*/
-    font-size: 2rem;
-    text-shadow: 3px 3px 5px rgb(7, 7, 7);
-    
-}
+	.h3 {
+		/*Napis jaka dieta*/
+		margin-top: 40px;
+		margin-left: 100px;
+		font-style: italic;
+		text-align: left;
+		font-size: 2.5rem;
+		color: red;
+	}
 
-main {
-    /* <!- margines między górnym zdjęciem a Czym jest białko- -> */
-    /* margin: 60px 0;  */
-    margin-bottom: 100px;
-}
-.wrapper {                   /*strona nie jest na całej szerokości */
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
-}
+	hr {
+		margin-bottom: 30px;
+		color: lightgrey;
+	}
 
-.o-diecie {                /*Napis jaka dieta*/
-    margin-bottom: 30px;
-    margin-top: 93px;
-    font-style: bold;
-    text-align: center;
-    font-size: 4rem;
-    color: red
-}
+	table {
+		padding: 5px 25px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		margin-bottom: 30px;
+		border: 0px solid black;
+		border-spacing: 0;
+		width: auto;
+	}
 
+	/* ramka w komórkach tabeli, padding do zmiany wielkości komorek */
+	td {
+		padding: 10px 15px;
+		border: 1px solid black;
+		font-size: 1.6rem;
+	}
 
+	.lewa {
+		background-color: #f4f1de;
+		text-align: center;
+		font-weight: bold;
+		font-size: 2rem;
+	}
 
-.opis-diety-info {            /*informacje pod  O MNIE*/
-    margin-bottom: 20px;
-    margin-top: 10px;
-    font-size: 2.2rem;
-    padding: 0px 100px;
-    line-height: 1.6;
-    text-indent: 20px;
+	.prawa {
+		font-style: italic;
+		text-align: center;
+		font-weight: bold;
+	}
 
-   
-}
+	.gora {
+		background-color: #ffd60a;
+		text-align: center;
+		font-size: 1.8rem;
+		font-weight: bold;
+		padding: 5px;
+	}
 
-.h3 {                /*Napis jaka dieta*/
-    margin-top: 40px;
-    margin-left: 100px;
-    font-style: italic;
-    text-align: left;
-    font-size: 2.5rem;
-    color: red
-    
-}
-
-
-hr {
-    margin-bottom: 30px;
-    color: lightgrey;
-}
-
-img  {
-    height: 200px;
-    width: 200px;
-
-}
-
-
-table {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    border: 1px solid black;
-    border-spacing: 0;
-    width: 1100px;
-  
-
-}
-
-                                /* ramka w komórkach tabeli, padding do zmiany wielkości komorek */
-td {
-padding: 25px 5px;
-border: 1px solid black;
-font-size: 2rem;
-
-
-
-}
-
-.lewa {
- background-color: #f4f1de;
- text-align: center;
- font-weight: bold;
- font-size: 2.5rem;
-    
-}
-
-.prawa {
-
-    font-style: italic;
-    text-align: center;
-    font-weight: bold;
-}
-
-.gora {
-    background-color: #ffd60a;
-    text-align: center;
-    font-size: 2.8rem;
-    font-weight: bold;
-    padding: 15px;
- 
-}
-
-footer {
-    padding: 20px 10px;
-    text-align: center;
-    background-color: #14213D;
-    color: #FFF;
-    font-style:normal;
-    margin-top: 150px;
+	footer {
+		padding: 10px 10px;
+		text-align: center;
+		background-color: #14213d;
+		color: #fff;
+		font-style: normal;
+		margin-top: 20px;
+	}
 }

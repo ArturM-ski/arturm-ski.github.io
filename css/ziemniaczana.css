@@ -8,13 +8,13 @@ html {
     scroll-behavior: smooth;  /*płynne przewijanie strony*/
     font-size: 62.5%;
 }
-
-
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media (min-width: 320px) {
 
 
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 
@@ -25,18 +25,18 @@ nav {
     height: 60px;
     background-color: #14213D;
     text-align: center;
-    line-height: 60px;
-    margin-bottom: 30px;
+    line-height: 25px;
+    margin-bottom: 0px;
 }
 
 .nav-items a {
-    padding: 0 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #FFF;
-    letter-spacing: 1px;
-    transition: color 300ms;
+		padding: 5px 5px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #fff;
+		letter-spacing: 0px;
+		transition: color 300ms;
 }
 
 .nav-items a:hover {
@@ -45,16 +45,14 @@ nav {
 
 header {                                     /* zdjęcie na samej górze*/
     background-image: url('../img/ziemniaczana4.jpg');
-    height: 380px;
-    background-position: center;
-    background-size: 100% 140%;
-    position:relative;
-    margin: auto;
-    width: 1000px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    overflow: hidden; 
-}
+		height: 180px;
+		background-position: center;
+		position: relative;
+		margin: auto;
+		margin-bottom: 30px;
+		overflow: hidden;
+	}
+
 
 .fade {                                 /*stylowanie wszystkich zdjęć*/
     position:absolute;      
@@ -76,7 +74,7 @@ header {                                     /* zdjęcie na samej górze*/
 
 .text h1{                           /*tekst na środku górnego zdjęcia*/
     margin-bottom: 10px;
-    font-size:  6rem;
+    font-size:  2.6rem;
     text-shadow: 13px 13px 15px rgb(7, 7, 7);
 }
 
@@ -92,11 +90,7 @@ header {                                     /* zdjęcie na samej górze*/
     
 }
 
-main {
-    /* <!- margines między górnym zdjęciem a Czym jest białko- -> */
-    /* margin: 60px 0;  */
-    margin-bottom: 100px;
-}
+
 .wrapper {                   /*strona nie jest na całej szerokości */
     margin: 0 auto;
     width: 100%;
@@ -140,11 +134,7 @@ hr {
     color: lightgrey;
 }
 
-img  {
-    height: 200px;
-    width: 200px;
 
-}
 
 ul {
     margin-left: 150px;
@@ -161,4 +151,5 @@ footer {
     color: #FFF;
     font-style:normal;
     margin-top: 150px;
+}
 }
