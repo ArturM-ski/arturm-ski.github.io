@@ -46,6 +46,7 @@ html {
 		background-image: url("../img/niskoenergetyczna.jpg");
 		height: 180px;
 		background-position: center;
+		background-size: cover;
 		position: relative;
 		margin: auto;
 		margin-bottom: 10px;
@@ -72,7 +73,7 @@ html {
 	.text h1 {
 		/*tekst na środku górnego zdjęcia*/
 		margin-bottom: 10px;
-		font-size: 2.6rem;
+		font-size: 2.2rem;
 		text-shadow: 13px 13px 15px rgb(7, 7, 7);
 	}
 

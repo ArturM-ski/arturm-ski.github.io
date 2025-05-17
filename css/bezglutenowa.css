@@ -45,6 +45,7 @@ html {
 		background-image: url("../img/bezglutenowa.jpg");
 		height: 180px;
 		background-position: center;
+		background-size: cover;
 		position: relative;
 		margin: auto;
 		margin-bottom: 10px;
