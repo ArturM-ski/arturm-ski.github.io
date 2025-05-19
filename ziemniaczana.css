@@ -8,11 +8,11 @@ html {
 	scroll-behavior: smooth; /*płynne przewijanie strony*/
 	font-size: 62.5%;
 }
-/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 @media (min-width: 320px) {
 	body {
 		font-family: "Lato", sans-serif;
-		font-size: 0.8em;
+		font-size: 0.9rem;
 	}
 
 	nav {
@@ -22,7 +22,7 @@ html {
 		height: 30px;
 		background-color: #14213d;
 		text-align: center;
-		line-height: 30px; /*pozycja tekstu nawi w pionie*/
+		line-height: 30px;
 		margin-bottom: 0px;
 	}
 
@@ -42,14 +42,22 @@ html {
 
 	header {
 		/* zdjęcie na samej górze*/
-		background-image: url("../img/bezglutenowa.jpg");
+		background-image: url("../img/ziemniaczana4.jpg");
 		height: 180px;
 		background-position: center;
 		background-size: cover;
 		position: relative;
 		margin: auto;
-		margin-bottom: 10px;
+		margin-bottom: 30px;
 		overflow: hidden;
+
+		/* background-image: url("../img/wysokobialkowa3.jpg");
+		width: auto;
+		height: 180px;
+		background-size: cover;
+		background-position: bottom;
+		position: relative;
+   */
 	}
 
 	.fade {
@@ -57,7 +65,7 @@ html {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background-color: rgb(0, 0, 0, 0.5); /*cieniowanie*/
+		background-color: rgb(0, 0, 0, 0.4); /*cieniowanie*/
 	}
 
 	.text {
@@ -88,11 +96,6 @@ html {
 		text-shadow: 3px 3px 5px rgb(7, 7, 7);
 	}
 
-	main {
-		/* <!- margines między górnym zdjęciem a Czym jest gluten- -> */
-		/* margin: 60px 0;  */
-		margin-bottom: 100px;
-	}
 	.wrapper {
 		/*strona nie jest na całej szerokości */
 		margin: 0 auto;
@@ -118,13 +121,14 @@ html {
 		line-height: 1.6;
 		text-indent: 20px;
 	}
+
 	.h3 {
 		/*Napis jaka dieta*/
-		margin-top: 40px;
-		margin-left: 40px;
+		margin-top: 20px;
+		margin-left: 60px;
 		font-style: italic;
 		text-align: left;
-		font-size: 2rem;
+		font-size: 2.2rem;
 		color: red;
 	}
 
@@ -133,33 +137,10 @@ html {
 		color: lightgrey;
 	}
 
-	/* ramka tabeli całej border spcing do wyzerowania obramowania komorek*/
-	table {
-		padding: 5px 5px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 10px;
-		margin-bottom: 30px;
-		border: 0px solid black;
-		border-spacing: 0;
-		width: auto;
-	}
-
-	/* ramka w komórkach tabeli, padding do zmiany wielkości komorek */
-	td {
-		padding: 5px 20px;
-		border: 1px solid black;
+	ul {
+		margin-left: 40px;
 		font-size: 1.2rem;
-	}
-
-	.gora {
-		background-color: #ffd60a;
-	}
-
-	.pogrubienie {
-		font-weight: bold;
-		font-size: 2rem;
-		text-align: center;
+		line-height: 2;
 	}
 
 	footer {
@@ -171,7 +152,7 @@ html {
 		margin-top: 20px;
 	}
 }
-/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 @media (min-width: 768px) {
 	body {
 		font-family: "Lato", sans-serif;
@@ -182,20 +163,20 @@ html {
 		position: sticky;
 		top: 0;
 		z-index: 10;
-		height: 45px;
+		height: 40px;
 		background-color: #14213d;
 		text-align: center;
-		line-height: 45px; /*pozycja tekstu nawi w pionie*/
+		line-height: 35px;
 		margin-bottom: 0px;
 	}
 
 	.nav-items a {
-		padding: 5px 10px;
+		padding: 5px 5px;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: bold;
 		color: #fff;
-		letter-spacing: 1.2px;
+		letter-spacing: 1px;
 		transition: color 300ms;
 	}
 
@@ -205,12 +186,13 @@ html {
 
 	header {
 		/* zdjęcie na samej górze*/
-		background-image: url("../img/bezglutenowa.jpg");
+		background-image: url("../img/ziemniaczana4.jpg");
 		height: 280px;
 		background-position: center;
+		background-size: cover;
 		position: relative;
 		margin: auto;
-		margin-bottom: 10px;
+		margin-bottom: 30px;
 		overflow: hidden;
 	}
 
@@ -219,7 +201,7 @@ html {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background-color: rgb(0, 0, 0, 0.5); /*cieniowanie*/
+		background-color: rgb(0, 0, 0, 0.4); /*cieniowanie*/
 	}
 
 	.text {
@@ -269,10 +251,12 @@ html {
 		line-height: 1.6;
 		text-indent: 20px;
 	}
+
 	.h3 {
 		/*Napis jaka dieta*/
 		margin-top: 40px;
-		margin-left: 40px;
+		margin-left: 60px;
+		margin-bottom: 40px;
 		font-style: italic;
 		text-align: left;
 		font-size: 2.8rem;
@@ -284,32 +268,10 @@ html {
 		color: lightgrey;
 	}
 
-	/* ramka tabeli całej border spcing do wyzerowania obramowania komorek*/
-	table {
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 10px;
-		margin-bottom: 30px;
-		border: 1px solid white;
-		border-spacing: 0;
-		width: 700px;
-	}
-
-	/* ramka w komórkach tabeli, padding do zmiany wielkości komorek */
-	td {
-		padding: 20px 40px;
-		border: 1px solid black;
-		font-size: 2rem;
-	}
-
-	.gora {
-		background-color: #ffd60a;
-	}
-
-	.pogrubienie {
-		font-weight: bold;
-		font-size: 2rem;
-		text-align: center;
+	ul {
+		margin-left: 40px;
+		font-size: 1.8rem;
+		line-height: 2;
 	}
 
 	footer {
@@ -318,30 +280,30 @@ html {
 		background-color: #14213d;
 		color: #fff;
 		font-style: normal;
-		margin-top: 50px;
+		margin-top: 150px;
 	}
 }
-/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  */
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 @media (min-width: 992px) {
 	body {
 		font-family: "Lato", sans-serif;
-		font-size: 1.6rem;
+		font-size: 1.4rem;
 	}
 
 	nav {
 		position: sticky;
 		top: 0;
 		z-index: 10;
-		height: 60px;
+		height: 40px;
 		background-color: #14213d;
 		text-align: center;
-		line-height: 60px;
+		line-height: 35px;
 		margin-bottom: 0px;
 	}
 
 	.nav-items a {
-		padding: 0 30px;
+		padding: 5px 15px;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: bold;
@@ -356,12 +318,12 @@ html {
 
 	header {
 		/* zdjęcie na samej górze*/
-		background-image: url("../img/bezglutenowa.jpg");
+		background-image: url("../img/ziemniaczana4.jpg");
 		height: 280px;
 		background-position: center;
+		background-size: cover;
 		position: relative;
 		margin: auto;
-		width: 1080px;
 		margin-bottom: 30px;
 		overflow: hidden;
 	}
@@ -371,7 +333,7 @@ html {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background-color: rgb(0, 0, 0, 0.5); /*cieniowanie*/
+		background-color: rgb(0, 0, 0, 0.4); /*cieniowanie*/
 	}
 
 	.text {
@@ -386,7 +348,7 @@ html {
 	.text h1 {
 		/*tekst na środku górnego zdjęcia*/
 		margin-bottom: 10px;
-		font-size: 6rem;
+		font-size: 5rem;
 		text-shadow: 13px 13px 15px rgb(7, 7, 7);
 	}
 
@@ -396,11 +358,6 @@ html {
 		color: #fca311;
 	}
 
-	main {
-		/* <!- margines między górnym zdjęciem a Czym jest gluten- -> */
-		/* margin: 60px 0;  */
-		margin-bottom: 10px;
-	}
 	.wrapper {
 		/*strona nie jest na całej szerokości */
 		margin: 0 auto;
@@ -410,8 +367,7 @@ html {
 
 	.o-diecie {
 		/*Napis jaka dieta*/
-		margin-bottom: 10px;
-		margin-top: 30px;
+		padding: 25px 35px;
 		font-style: bold;
 		text-align: center;
 		font-size: 4rem;
@@ -420,10 +376,10 @@ html {
 
 	.opis-diety-info {
 		/*informacje pod  O MNIE*/
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		margin-top: 10px;
 		font-size: 2.2rem;
-		padding: 0px 50px;
+		padding: 0px 20px;
 		line-height: 1.6;
 		text-indent: 20px;
 	}
@@ -431,10 +387,11 @@ html {
 	.h3 {
 		/*Napis jaka dieta*/
 		margin-top: 40px;
-		margin-left: 70px;
+		margin-left: 60px;
+		margin-bottom: 40px;
 		font-style: italic;
 		text-align: left;
-		font-size: 2.5rem;
+		font-size: 2.8rem;
 		color: red;
 	}
 
@@ -443,31 +400,10 @@ html {
 		color: lightgrey;
 	}
 
-	table {
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 10px;
-		margin-bottom: 70px;
-		border: 1px solid white;
-		border-spacing: 0;
-		width: 800px;
-	}
-
-	/* ramka w komórkach tabeli, padding do zmiany wielkości komorek */
-	td {
-		padding: 5px 50px;
-		border: 1px solid black;
-		font-size: 2rem;
-	}
-
-	.gora {
-		background-color: #ffd60a;
-	}
-
-	.pogrubienie {
-		font-weight: bold;
-		font-size: 3rem;
-		text-align: center;
+	ul {
+		margin-left: 40px;
+		font-size: 1.8rem;
+		line-height: 2;
 	}
 
 	footer {
@@ -476,6 +412,6 @@ html {
 		background-color: #14213d;
 		color: #fff;
 		font-style: normal;
-		margin-top: 50px;
+		margin-top: 150px;
 	}
 }

@@ -14,7 +14,7 @@ html {
 
 	body {
 		font-family: "Lato", sans-serif;
-		font-size: 1rem;
+		font-size: 0.9rem;
 	}
 
 	.wrapper {
@@ -40,7 +40,7 @@ html {
 		text-transform: uppercase;
 		font-weight: bold;
 		color: #fff;
-		letter-spacing: 1px;
+		letter-spacing: 1.2px;
 		transition: color 300ms;
 	}
 
@@ -77,7 +77,7 @@ html {
 	.text h1 {
 		/*tekst na środku górnego zdjęcia*/
 		margin-bottom: 5px;
-		font-size: 4rem;
+		font-size: 3rem;
 		text-shadow: 3px 3px 5px rgb(7, 7, 7);
 	}
 
@@ -89,7 +89,7 @@ html {
 
 	.text p {
 		/*tekst na środku górnego zdjęcia pod HEATHLIVE*/
-		font-size: 2rem;
+		font-size: 1.6rem;
 		text-shadow: 3px 3px 5px rgb(7, 7, 7);
 	}
 
@@ -104,15 +104,15 @@ html {
 		padding: 5px;
 		/* font-style: italic; */
 		text-align: center;
-		font-size: 2rem;
+		font-size: 2.6rem;
 		color: red;
 	}
 
 	.about-me-info {
 		/*informacje pod  JAKA DIETA*/
 		margin-bottom: 10px;
-		font-size: 1.2rem;
-		padding: 0px 20px; /*ZMIANA SZER OPISOW*/
+		font-size: 1.6rem;
+		padding: 0px 10px; /*ZMIANA SZER OPISOW*/
 		line-height: 1.6;
 		text-indent: 20px;
 	}
@@ -146,21 +146,21 @@ html {
 	}
 
 	.podsumowanie {
-		/* Napis jaka podsumowanie */
+		/* Napis  podsumowanie */
 
-		margin-top: 20px;
-		margin-bottom: 10px;
+		margin-top: 40px;
+		margin-bottom: 20px;
 		text-align: center;
-		font-size: 2rem;
+		font-size: 2.6rem;
 		color: red;
 	}
 	.podsumowanie-info {
 		/*informacje pod  podsumowanie*/
 
 		margin-bottom: 10px;
-		font-size: 1.2rem;
-		padding: 0px 20px; /*zmiana szer opisow*/
-		line-height: 1.2;
+		font-size: 1.6rem;
+		padding: 0px 10px; /*zmiana szer opisow*/
+		line-height: 1.6;
 		text-indent: 20px;
 	}
 
@@ -303,7 +303,7 @@ html {
 	header {
 		/* zdjęcie na samej górze*/
 		background-image: url("../img/warzywa.jpg");
-		height: 380px;
+		height: 280px;
 		background-size: cover;
 		background-position: bottom;
 		position: relative;
@@ -341,7 +341,7 @@ html {
 
 	.text p {
 		/*tekst na środku górnego zdjęcia pod HEATHLIVE*/
-		font-size: 2rem;
+		font-size: 2.4rem;
 		text-shadow: 3px 3px 5px rgb(7, 7, 7);
 	}
 
@@ -352,7 +352,7 @@ html {
 
 	.section-title {
 		/*Napis jaka dieta*/
-		margin-bottom: 30px;
+		margin-bottom: 5px;
 		/* font-style: italic; */
 		text-align: center;
 		font-size: 4rem;
@@ -362,14 +362,14 @@ html {
 	.about-me-info {
 		/*informacje pod  O MNIE*/
 		margin-bottom: 10px;
-		font-size: 2rem;
-		padding: 0px 50px;
+		font-size: 1.6rem;
+		padding: 0px 30px;
 		line-height: 1.6;
 		text-indent: 20px;
 	}
 
 	.projects {
-		margin: 60px auto;
+		margin: 20px auto;
 	}
 
 	.project {
@@ -411,7 +411,7 @@ html {
 		/*informacje pod  O MNIE*/
 
 		margin-bottom: 10px;
-		font-size: 2rem;
+		font-size: 1.6rem;
 		padding: 0px 50px;
 		line-height: 1.6;
 		text-indent: 20px;
@@ -627,11 +627,11 @@ html {
 		/* stylowanie zdjęcia diety*/
 		position: relative;
 		margin-bottom: 50px;
-		margin-left: 80px;
+		margin-left: center;
 		height: 100px;
 		width: 300px;
 		background-size: cover;
-		background-position: center;
+		background-position: auto;
 		text-align: center;
 		border-radius: 10px;
 		overflow: hidden; /* zaokrąglone zdjęcie ma białe tło*/
@@ -650,10 +650,10 @@ html {
 	.podsumowanie {
 		/*Napis  podsumowanie*/
 
-		/* margin-top: 380px; */
-		margin-top: 380px;
+	
+		margin-top: 320px;
 		margin-bottom: 10px;
-		text-align: center;
+		text-align: auto;
 		font-size: 4rem;
 		color: red;
 	}
