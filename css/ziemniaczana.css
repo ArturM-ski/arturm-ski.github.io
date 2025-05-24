@@ -27,12 +27,12 @@ html {
 	}
 
 	.nav-items a {
-		padding: 5px 5px;
+		padding: 1px 5px;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: bold;
 		color: #fff;
-		letter-spacing: 0.5px;
+		letter-spacing: 0.6px;
 		transition: color 300ms;
 	}
 

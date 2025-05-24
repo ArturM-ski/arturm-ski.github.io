@@ -31,12 +31,12 @@ html {
 	}
 
 	.nav-items a {
-		padding: 0px 4px;
+		padding: 1px 5px;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: bold;
 		color: #fff;
-		letter-spacing: auto;
+		letter-spacing: 0.6px;
 		transition: color 300ms;
 	}
 
