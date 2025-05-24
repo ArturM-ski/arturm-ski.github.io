@@ -13,7 +13,7 @@ html {
 @media (min-width: 320px) {
 	body {
 		font-family: "Lato", sans-serif;
-		font-size: 0.9rem;
+		font-size: 1.2rem;
 	}
 
 	nav {
@@ -33,7 +33,7 @@ html {
 		text-transform: uppercase;
 		font-weight: bold;
 		color: #fff;
-		letter-spacing: 1px;
+		letter-spacing: 0.5px;
 		transition: color 300ms;
 	}
 
@@ -109,7 +109,7 @@ html {
 		/*informacje pod  O MNIE*/
 		margin-bottom: 10px;
 		margin-top: 5px;
-		font-size: 1.2rem;
+		font-size: 1.6rem;
 		padding: 0px 10px;
 		line-height: 1.6;
 		text-indent: 20px;
@@ -145,14 +145,14 @@ html {
 	td {
 		padding: 5px 5px;
 		border: 1px solid black;
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 
 	.lewa {
 		background-color: #f4f1de;
 		text-align: center;
 		font-weight: bold;
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 
 	.prawa {

@@ -5,46 +5,44 @@
 }
 
 html {
-    scroll-behavior: smooth;  /*płynne przewijanie strony*/
-    font-size: 62.5%;
+	scroll-behavior: smooth; /*płynne przewijanie strony*/
+	font-size: 62.5%;
 }
-
-
 
 @media (min-width: 320px) {
-body {
-    font-family: 'Lato', sans-serif;
-    font-size: 0.75rem;
-}
+	body {
+		font-family: "Lato", sans-serif;
+		font-size: 1.2rem;
+	}
 
+	nav {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		height: 30px;
+		background-color: #14213d;
+		text-align: center;
+		line-height: 30px;
+		margin-bottom: 0px;
+	}
 
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    height: 30px;
-    background-color: #14213D;
-    text-align: center;
-    line-height: 30px;
-    margin-bottom: 0px;
-}
+	.nav-items a {
+		padding: 0 3px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #fff;
+		letter-spacing: 0.5px;
+		transition: color 300ms;
+	}
 
-.nav-items a {
-    padding: 0 3px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #FFF;
-    letter-spacing: 1px;
-    transition: color 300ms;
-}
+	.nav-items a:hover {
+		color: #fca311;
+	}
 
-.nav-items a:hover {
-    color: #FCA311;
-}
-
-header {                                     /* zdjęcie na samej górze*/
-    background-image: url('../img/niskiIG.jpg');
+	header {
+		/* zdjęcie na samej górze*/
+		background-image: url("../img/niskiIG.jpg");
 		height: 180px;
 		background-position: center;
 		background-size: cover;
@@ -52,141 +50,131 @@ header {                                     /* zdjęcie na samej górze*/
 		margin: auto;
 		margin-bottom: 30px;
 		overflow: hidden;
-}
+	}
 
-.fade {                                 /*stylowanie wszystkich zdjęć*/
-    position:absolute;      
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0, 0.5);       /*cieniowanie*/
-}
+	.fade {
+		/*stylowanie wszystkich zdjęć*/
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0, 0.5); /*cieniowanie*/
+	}
 
+	.text {
+		/*tekst na środku zdjęcia*/
+		position: absolute;
+		color: white;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 
-.text {                         /*tekst na środku zdjęcia*/
-    position: absolute;
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+	.text h1 {
+		/*tekst na środku górnego zdjęcia*/
+		margin-bottom: 10px;
+		font-size: 2.6rem;
+		text-shadow: 13px 13px 15px rgb(7, 7, 7);
+	}
 
-}
+	.text span {
+		/*tekst na środku górnego zdjęcia*/
+		text-transform: uppercase;
+		color: #fca311;
+	}
 
-.text h1{                           /*tekst na środku górnego zdjęcia*/
-    margin-bottom: 10px;
-    font-size:  2.6rem;
-    text-shadow: 13px 13px 15px rgb(7, 7, 7);
-}
+	.text p {
+		/*tekst na środku górnego zdjęcia pod HEATHLIVE*/
+		font-size: 2rem;
+		text-shadow: 3px 3px 5px rgb(7, 7, 7);
+	}
 
-.text span {                        /*tekst na środku górnego zdjęcia*/
-    text-transform: uppercase;
-    color: #FCA311;
-}
+	main {
+		/* <!- margines między górnym zdjęciem a Czym jest białko- -> */
+		/* margin: 60px 0;  */
+		margin-bottom: 100px;
+	}
+	.wrapper {
+		/*strona nie jest na całej szerokości */
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1200px;
+	}
 
-
-.text p {                     /*tekst na środku górnego zdjęcia pod HEATHLIVE*/
-    font-size: 2rem;
-    text-shadow: 3px 3px 5px rgb(7, 7, 7);
-    
-}
-
-main {
-    /* <!- margines między górnym zdjęciem a Czym jest białko- -> */
-    /* margin: 60px 0;  */
-    margin-bottom: 100px;
-}
-.wrapper {                   /*strona nie jest na całej szerokości */
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.o-diecie {                /*Napis jaka dieta*/
+	.o-diecie {
+		/*Napis jaka dieta*/
 		padding: 5px 5px;
 		font-style: bold;
 		text-align: center;
 		font-size: 2.6rem;
 		color: red;
-}
+	}
 
-
-
-.opis-diety-info {            /*informacje pod  O MNIE*/
+	.opis-diety-info {
+		/*informacje pod  O MNIE*/
 		margin-bottom: 10px;
 		margin-top: 5px;
-		font-size: 1.2rem;
+		font-size: 1.6rem;
 		padding: 0px 10px;
 		line-height: 1.6;
 		text-indent: 20px;
+	}
 
-   
-}
+	.h3 {
+		/*Napis jaka dieta*/
+		margin-top: 40px;
+		margin-left: 50px;
+		font-style: italic;
+		text-align: left;
+		font-size: 2rem;
+		color: red;
+	}
 
-.h3 {                /*Napis jaka dieta*/
-    margin-top: 40px;
-    margin-left: 50px;
-    font-style: italic;
-    text-align: left;
-    font-size: 2rem;
-    color: red
-    
-}
+	hr {
+		margin-bottom: 30px;
+		color: lightgrey;
+	}
 
+	img {
+		height: 200px;
+		width: 200px;
+	}
 
-hr {
-    margin-bottom: 30px;
-    color: lightgrey;
-}
+	ul {
+		margin-left: 50px;
+		font-size: 1.6rem;
+		font-weight: bold;
+		font-style: italic;
+	}
 
+	ol {
+		margin-top: 20px;
+		margin-left: 50px;
+		font-size: 1.6rem;
+		font-weight: bold;
+		font-style: italic;
+	}
 
-img  {
-    height: 200px;
-    width: 200px;
+	li {
+		margin-bottom: 10px;
+	}
 
-}
+	table {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		border: 1px solid black;
+		border-spacing: 0;
+		width: auto;
+	}
 
-ul {
-    margin-left: 50px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    font-style: italic;
-}
+	/* ramka w komórkach tabeli, padding do zmiany wielkości komorek */
+	td {
+		padding: 5px 5px;
+		border: 1px solid black;
+		font-size: 1.4rem;
+	}
 
-ol {
-    margin-top: 20px;
-    margin-left: 50px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-style: italic;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-table {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    border: 1px solid black;
-    border-spacing: 0;
-    width: auto;
-  
-
-}
-
-                                /* ramka w komórkach tabeli, padding do zmiany wielkości komorek */
-td {
-padding: 5px 5px;
-border: 1px solid black;
-font-size: 1.2rem;
-
-
-
-
-}
-
-/* .lewa {
+	/* .lewa {
  background-color: #f4f1de;
  text-align: center;
  font-weight: bold;
@@ -194,42 +182,38 @@ font-size: 1.2rem;
     
 } */
 
-.dolne {
+	.dolne {
+		font-style: italic;
+		text-align: center;
+		font-weight: bold;
+	}
 
-    font-style: italic;
-    text-align: center;
-    font-weight: bold;
-}
+	.gora {
+		background-color: #ffd60a;
+		text-align: center;
+		font-size: 1.4rem;
+		font-weight: bold;
+		padding: 5px;
+	}
 
-.gora {
-    background-color: #ffd60a;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding: 5px;
- 
+	footer {
+		padding: 20px 10px;
+		text-align: center;
+		background-color: #14213d;
+		color: #fff;
+		font-style: normal;
+		margin-top: 50px;
+	}
 }
-
-footer {
-    padding: 20px 10px;
-    text-align: center;
-    background-color: #14213D;
-    color: #FFF;
-    font-style:normal;
-    margin-top: 50px;
-}
-}
-
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-@media (min-width: 768px){
-body {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.4rem;
-}
+@media (min-width: 768px) {
+	body {
+		font-family: "Lato", sans-serif;
+		font-size: 1.4rem;
+	}
 
-
-nav {
+	nav {
 		position: sticky;
 		top: 0;
 		z-index: 10;
@@ -238,9 +222,9 @@ nav {
 		text-align: center;
 		line-height: 45px; /*pozycja tekstu nawi w pionie*/
 		margin-bottom: 0px;
-}
+	}
 
-.nav-items a {
+	.nav-items a {
 		padding: 5px 10px;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -248,155 +232,146 @@ nav {
 		color: #fff;
 		letter-spacing: 1.2px;
 		transition: color 300ms;
-}
+	}
 
-.nav-items a:hover {
-    color: #FCA311;
-}
+	.nav-items a:hover {
+		color: #fca311;
+	}
 
-header {                                     /* zdjęcie na samej górze*/
-    background-image: url('../img/niskiIG.jpg');
+	header {
+		/* zdjęcie na samej górze*/
+		background-image: url("../img/niskiIG.jpg");
 		height: 280px;
 		background-position: center;
 		position: relative;
 		margin: auto;
 		margin-bottom: 10px;
 		overflow: hidden;
-}
+	}
 
-.fade {                                 /*stylowanie wszystkich zdjęć*/
-    position:absolute;      
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0, 0.5);       /*cieniowanie*/
-}
+	.fade {
+		/*stylowanie wszystkich zdjęć*/
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0, 0.5); /*cieniowanie*/
+	}
 
+	.text {
+		/*tekst na środku zdjęcia*/
+		position: absolute;
+		color: white;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 
-.text {                         /*tekst na środku zdjęcia*/
-    position: absolute;
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+	.text h1 {
+		/*tekst na środku górnego zdjęcia*/
+		margin-bottom: 10px;
+		font-size: 4.5rem;
+		text-shadow: 13px 13px 15px rgb(7, 7, 7);
+	}
 
-}
+	.text span {
+		/*tekst na środku górnego zdjęcia*/
+		text-transform: uppercase;
+		color: #fca311;
+	}
 
-.text h1{                           /*tekst na środku górnego zdjęcia*/
-    margin-bottom: 10px;
-    font-size:  4.5rem;
-    text-shadow: 13px 13px 15px rgb(7, 7, 7);
-}
+	.text p {
+		/*tekst na środku górnego zdjęcia pod HEATHLIVE*/
+		font-size: 2rem;
+		text-shadow: 3px 3px 5px rgb(7, 7, 7);
+	}
 
-.text span {                        /*tekst na środku górnego zdjęcia*/
-    text-transform: uppercase;
-    color: #FCA311;
-}
+	main {
+		/* <!- margines między górnym zdjęciem a Czym jest białko- -> */
+		/* margin: 60px 0;  */
+		margin-bottom: 100px;
+	}
+	.wrapper {
+		/*strona nie jest na całej szerokości */
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1200px;
+	}
 
-
-.text p {                     /*tekst na środku górnego zdjęcia pod HEATHLIVE*/
-    font-size: 2rem;
-    text-shadow: 3px 3px 5px rgb(7, 7, 7);
-    
-}
-
-main {
-    /* <!- margines między górnym zdjęciem a Czym jest białko- -> */
-    /* margin: 60px 0;  */
-    margin-bottom: 100px;
-}
-.wrapper {                   /*strona nie jest na całej szerokości */
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.o-diecie {                /*Napis jaka dieta*/
+	.o-diecie {
+		/*Napis jaka dieta*/
 		padding: 15px 10px;
 		font-style: bold;
 		text-align: center;
 		font-size: 4rem;
 		color: red;
-}
+	}
 
-
-
-.opis-diety-info {            /*informacje pod  O MNIE*/
+	.opis-diety-info {
+		/*informacje pod  O MNIE*/
 		margin-bottom: 10px;
 		margin-top: 10px;
 		font-size: 2.2rem;
 		padding: 0px 20px;
 		line-height: 1.6;
 		text-indent: 20px;
+	}
 
-   
-}
+	.h3 {
+		/*Napis jaka dieta*/
+		margin-top: 40px;
+		margin-left: 50px;
+		font-style: italic;
+		text-align: left;
+		font-size: 2.6rem;
+		color: red;
+	}
 
-.h3 {                /*Napis jaka dieta*/
-    margin-top: 40px;
-    margin-left: 50px;
-    font-style: italic;
-    text-align: left;
-    font-size: 2.6rem;
-    color: red
-    
-}
+	hr {
+		margin-bottom: 30px;
+		color: lightgrey;
+	}
 
+	img {
+		height: 200px;
+		width: 200px;
+	}
 
-hr {
-    margin-bottom: 30px;
-    color: lightgrey;
-}
+	ul {
+		margin-left: 50px;
+		font-size: 2.4rem;
+		font-weight: bold;
+		font-style: italic;
+	}
 
+	ol {
+		margin-top: 20px;
+		margin-left: 50px;
+		font-size: 2.2rem;
+		font-weight: bold;
+		font-style: italic;
+	}
 
-img  {
-    height: 200px;
-    width: 200px;
+	li {
+		margin-bottom: 10px;
+	}
 
-}
+	table {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		border: 1px solid black;
+		border-spacing: 0;
+		width: auto;
+	}
 
-ul {
-    margin-left: 50px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    font-style: italic;
-}
+	/* ramka w komórkach tabeli, padding do zmiany wielkości komorek */
+	td {
+		padding: 5px 5px;
+		border: 1px solid black;
+		font-size: 1.2rem;
+	}
 
-ol {
-    margin-top: 20px;
-    margin-left: 50px;
-    font-size: 2.2rem;
-    font-weight: bold;
-    font-style: italic;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-table {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    border: 1px solid black;
-    border-spacing: 0;
-    width: auto;
-  
-
-}
-
-                                /* ramka w komórkach tabeli, padding do zmiany wielkości komorek */
-td {
-padding: 5px 5px;
-border: 1px solid black;
-font-size: 1.2rem;
-
-
-
-
-}
-
-/* .lewa {
+	/* .lewa {
  background-color: #f4f1de;
  text-align: center;
  font-weight: bold;
@@ -404,41 +379,37 @@ font-size: 1.2rem;
     
 } */
 
-.dolne {
+	.dolne {
+		font-style: italic;
+		text-align: center;
+		font-weight: bold;
+	}
 
-    font-style: italic;
-    text-align: center;
-    font-weight: bold;
-}
+	.gora {
+		background-color: #ffd60a;
+		text-align: center;
+		font-size: 1.4rem;
+		font-weight: bold;
+		padding: 5px;
+	}
 
-.gora {
-    background-color: #ffd60a;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding: 5px;
- 
-}
-
-footer {
-    padding: 20px 10px;
-    text-align: center;
-    background-color: #14213D;
-    color: #FFF;
-    font-style:normal;
-    margin-top: 50px;
-}
-
+	footer {
+		padding: 20px 10px;
+		text-align: center;
+		background-color: #14213d;
+		color: #fff;
+		font-style: normal;
+		margin-top: 50px;
+	}
 }
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-@media (min-width: 992px){
-    body {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.6rem;
-}
+@media (min-width: 992px) {
+	body {
+		font-family: "Lato", sans-serif;
+		font-size: 1.6rem;
+	}
 
-
-nav {
+	nav {
 		position: sticky;
 		top: 0;
 		z-index: 10;
@@ -447,9 +418,9 @@ nav {
 		text-align: center;
 		line-height: 45px; /*pozycja tekstu nawi w pionie*/
 		margin-bottom: 0px;
-}
+	}
 
-.nav-items a {
+	.nav-items a {
 		padding: 5px 10px;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -457,14 +428,15 @@ nav {
 		color: #fff;
 		letter-spacing: 1.2px;
 		transition: color 300ms;
-}
+	}
 
-.nav-items a:hover {
-    color: #FCA311;
-}
+	.nav-items a:hover {
+		color: #fca311;
+	}
 
-header {                                     /* zdjęcie na samej górze*/
-    background-image: url('../img/niskiIG.jpg');
+	header {
+		/* zdjęcie na samej górze*/
+		background-image: url("../img/niskiIG.jpg");
 		height: 280px;
 		background-position: center;
 		position: relative;
@@ -472,144 +444,134 @@ header {                                     /* zdjęcie na samej górze*/
 		width: 1080px;
 		margin-bottom: 30px;
 		overflow: hidden;
-}
+	}
 
-.fade {                                 /*stylowanie wszystkich zdjęć*/
-    position:absolute;      
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0, 0.5);       /*cieniowanie*/
-}
+	.fade {
+		/*stylowanie wszystkich zdjęć*/
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0, 0.5); /*cieniowanie*/
+	}
 
+	.text {
+		/*tekst na środku zdjęcia*/
+		position: absolute;
+		color: white;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 
-.text {                         /*tekst na środku zdjęcia*/
-    position: absolute;
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+	.text h1 {
+		/*tekst na środku górnego zdjęcia*/
+		margin-bottom: 10px;
+		font-size: 6rem;
+		text-shadow: 13px 13px 15px rgb(7, 7, 7);
+	}
 
-}
+	.text span {
+		/*tekst na środku górnego zdjęcia*/
+		text-transform: uppercase;
+		color: #fca311;
+	}
 
-.text h1{                           /*tekst na środku górnego zdjęcia*/
-    margin-bottom: 10px;
-    font-size:  6rem;
-    text-shadow: 13px 13px 15px rgb(7, 7, 7);
-}
+	.text p {
+		/*tekst na środku górnego zdjęcia pod HEATHLIVE*/
+		font-size: 2rem;
+		text-shadow: 3px 3px 5px rgb(7, 7, 7);
+	}
 
-.text span {                        /*tekst na środku górnego zdjęcia*/
-    text-transform: uppercase;
-    color: #FCA311;
-}
+	main {
+		/* <!- margines między górnym zdjęciem a Czym jest białko- -> */
+		/* margin: 60px 0;  */
+		margin-bottom: 100px;
+	}
+	.wrapper {
+		/*strona nie jest na całej szerokości */
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1200px;
+	}
 
-
-.text p {                     /*tekst na środku górnego zdjęcia pod HEATHLIVE*/
-    font-size: 2rem;
-    text-shadow: 3px 3px 5px rgb(7, 7, 7);
-    
-}
-
-main {
-    /* <!- margines między górnym zdjęciem a Czym jest białko- -> */
-    /* margin: 60px 0;  */
-    margin-bottom: 100px;
-}
-.wrapper {                   /*strona nie jest na całej szerokości */
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.o-diecie {                /*Napis jaka dieta*/
+	.o-diecie {
+		/*Napis jaka dieta*/
 		margin-bottom: 10px;
 		margin-top: 30px;
 		font-style: bold;
 		text-align: center;
 		font-size: 4rem;
 		color: red;
-}
+	}
 
-
-
-.opis-diety-info {            /*informacje pod  O MNIE*/
+	.opis-diety-info {
+		/*informacje pod  O MNIE*/
 		margin-bottom: 10px;
 		margin-top: 10px;
 		font-size: 2.2rem;
 		padding: 0px 20px;
 		line-height: 1.6;
 		text-indent: 20px;
+	}
 
-   
-}
+	.h3 {
+		/*Napis jaka dieta*/
+		margin-top: 40px;
+		margin-left: 50px;
+		font-style: italic;
+		text-align: left;
+		font-size: 2.6rem;
+		color: red;
+	}
 
-.h3 {                /*Napis jaka dieta*/
-    margin-top: 40px;
-    margin-left: 50px;
-    font-style: italic;
-    text-align: left;
-    font-size: 2.6rem;
-    color: red
-    
-}
+	hr {
+		margin-bottom: 30px;
+		color: lightgrey;
+	}
 
+	img {
+		height: 200px;
+		width: 200px;
+	}
 
-hr {
-    margin-bottom: 30px;
-    color: lightgrey;
-}
+	ul {
+		margin-top: 40px;
+		margin-left: 50px;
+		font-size: 2.4rem;
+		font-weight: bold;
+		font-style: italic;
+	}
 
+	ol {
+		margin-top: 20px;
+		margin-left: 50px;
+		font-size: 2.2rem;
+		font-weight: bold;
+		font-style: italic;
+	}
 
-img  {
-    height: 200px;
-    width: 200px;
+	li {
+		margin-bottom: 10px;
+	}
 
-}
+	table {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		border: 1px solid black;
+		border-spacing: 0;
+		width: auto;
+	}
 
-ul {
-    margin-top: 40px;
-    margin-left: 50px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    font-style: italic;
-}
+	/* ramka w komórkach tabeli, padding do zmiany wielkości komorek */
+	td {
+		padding: 5px 5px;
+		border: 1px solid black;
+		font-size: 2.2rem;
+		width: auto;
+	}
 
-ol {
-    margin-top: 20px;
-    margin-left: 50px;
-    font-size: 2.2rem;
-    font-weight: bold;
-    font-style: italic;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-table {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    border: 1px solid black;
-    border-spacing: 0;
-    width: auto;
-  
-
-}
-
-                                /* ramka w komórkach tabeli, padding do zmiany wielkości komorek */
-td {
-padding: 5px 5px;
-border: 1px solid black;
-font-size: 2.2rem;
-width: auto;
-
-
-
-
-}
-
-/* .lewa {
+	/* .lewa {
  background-color: #f4f1de;
  text-align: center;
  font-weight: bold;
@@ -617,30 +579,26 @@ width: auto;
     
 } */
 
-.dolne {
+	.dolne {
+		font-style: italic;
+		text-align: center;
+		font-weight: bold;
+	}
 
-    font-style: italic;
-    text-align: center;
-    font-weight: bold;
+	.gora {
+		background-color: #ffd60a;
+		text-align: center;
+		font-size: 2.4rem;
+		font-weight: bold;
+		padding: 5px;
+	}
+
+	footer {
+		padding: 20px 10px;
+		text-align: center;
+		background-color: #14213d;
+		color: #fff;
+		font-style: normal;
+		margin-top: 50px;
+	}
 }
-
-.gora {
-    background-color: #ffd60a;
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: bold;
-    padding: 5px;
- 
-}
-
-footer {
-    padding: 20px 10px;
-    text-align: center;
-    background-color: #14213D;
-    color: #FFF;
-    font-style:normal;
-    margin-top: 50px;
-}
-
-}
-
