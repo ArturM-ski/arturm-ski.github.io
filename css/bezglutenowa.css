@@ -358,11 +358,10 @@ html {
 	header {
 		/* zdjęcie na samej górze*/
 		background-image: url("../img/bezglutenowa.jpg");
-		height: 280px;
+		height: 380px;
 		background-position: center;
 		position: relative;
 		margin: auto;
-		width: 1080px;
 		margin-bottom: 30px;
 		overflow: hidden;
 	}
