@@ -1,0 +1,326 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth; /*płynne przewijanie strony*/
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+}
+/* Renderowanie Wyniku  */
+.wynik {
+	/* background-color: lightgreen; */
+	color: #ffd60a;
+	margin: 0.5rem 0.5rem;
+	padding: 0.2rem;
+	font-size: 1.4rem;
+	border: none;
+	border-radius: 8px;
+	outline: none;
+	font-style: italic;
+}
+
+/* tekst Wynik i KAlkulator kalorii w tabelce */
+h1 {
+	text-align: center;
+	margin-bottom: 1.5rem;
+	color: red;
+	font-style: italic;
+}
+
+form input,
+form select,
+form button {
+	width: auto;
+}
+
+form input,
+form select {
+	background-color: #ffd60a;
+	color: black;
+}
+
+form button {
+	background-color: rgb(197, 181, 181);
+	color: #000;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+/* form button:hover {
+  background-color: #FFD60A;
+} */
+
+.result {
+	background-color: #003566;
+	padding: 1rem;
+	margin-top: 1.5rem;
+	border-radius: 8px;
+	font-weight: bold;
+	text-align: center;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background-color: #14213d;
+	text-align: center;
+}
+
+.nav-items a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 0.6px;
+	transition: color 300ms;
+	/* font-size: 2rem; */
+}
+
+.nav-items a:hover {
+	color: #fca311;
+}
+
+.wrapper {
+	/*strona nie jest na całej szerokości */
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.o-diecie {
+	/*Napis kalkulator kalorii*/
+	padding: 5px 5px;
+	font-style: bold;
+	text-align: center;
+	font-size: 3.6rem;
+	color: red;
+}
+
+.opis-diety-info {
+	/*informacje pod  O MNIE*/
+	margin-bottom: 50px;
+	margin-top: 5px;
+	font-size: 1.6rem;
+	padding: 10px 50px;
+	line-height: 1.6;
+	text-indent: 20px;
+	color: black;
+}
+
+h3 {
+	/*Napis jaka dieta*/
+	margin-top: 40px;
+	margin-left: 70px;
+	font-style: italic;
+	text-align: left;
+	font-size: 2.5rem;
+	color: red;
+}
+
+.example{
+	width: auto;
+	margin: auto 3rem;
+	background-color: #fff;
+	
+	border-radius: 2rem;
+	border: #553232;
+}
+
+h4 {
+	margin-bottom: 1rem;
+	margin-top: 40px;
+	margin-left: 70px;
+	font-style: italic;
+	text-align: left;
+	font-size: 2.0rem;
+	color: red;
+
+}
+h5{
+	text-decoration: none;
+	margin-left: 6rem;
+}
+br {
+	margin-bottom: 1rem;
+}
+ul {
+	margin-left: 40px;
+	font-size: 1.6rem;
+	line-height: 1.6;
+	font-style: italic;
+	font-weight: bold;
+}
+/* -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 320px) {
+	body {
+		font-size: 1rem;
+		background-color: rgb(24, 130, 165);
+	}
+
+	.o-diecie {
+		/*Napis kalkulator kalorii*/
+		padding: 5px 5px;
+		margin-top: 30px;
+		font-style: bold;
+		text-align: center;
+		font-size: 2.6rem;
+		color: red;
+	}
+
+	.opis-diety-info {
+		/*informacje pod  O MNIE*/
+		margin-bottom: 10px;
+		margin-top: 5px;
+		font-size: 1.6rem;
+		padding: 10px 10px;
+		line-height: 1.6;
+		text-indent: 20px;
+		color: black;
+	}
+
+	.container {
+		max-width: 350px;
+		font-size: 1.2rem;
+		margin: 2rem auto;
+		background-color: #003566;
+		padding: 2rem;
+		border-radius: 16px;
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+	}
+
+	form input,
+	form select,
+	form button {
+		margin: 0.2rem 0.2rem;
+		padding: 1.5rem;
+		font-size: 0.9rem;
+		border: none;
+		border-radius: 8px;
+		outline: none;
+	}
+
+	.result {
+		font-size: 1.2rem;
+	}
+	nav {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		height: 40px;
+		background-color: #14213d;
+		text-align: center;
+		line-height: 40px;
+		margin-bottom: 10px;
+	}
+
+	.nav-items a {
+		padding: 0.5px 2.8px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #fff;
+		letter-spacing: 0.6px;
+		transition: color 300ms;
+		font-size: 0.9rem;
+	}
+}
+/* -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px) {
+	body {
+		font-size: 1.6rem;
+		background-color: lightcoral;
+	}
+
+	.o-diecie {
+		/*Napis kalkulator kalorii*/
+		padding: 5px 5px;
+		font-style: bold;
+		text-align: center;
+		font-size: 4rem;
+		color: red;
+	}
+
+	.opis-diety-info {
+		/*informacje pod  O MNIE*/
+		margin-bottom: 10px;
+		margin-top: 5px;
+		font-size: 1.6rem;
+		padding: 10px 10px;
+		line-height: 1.6;
+		text-indent: 20px;
+		color: black;
+	}
+
+	.container {
+		max-width: 600px;
+		margin: 3rem auto;
+		background-color: #003566;
+		padding: 2rem;
+		border-radius: 16px;
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+	}
+
+	form input,
+	form select,
+	form button {
+		margin: 0.5rem 0.5rem;
+		padding: 1.5rem;
+		font-size: 1.2rem;
+		border: none;
+		border-radius: 8px;
+		outline: none;
+	}
+
+	.result {
+		font-size: 1.8rem;
+	}
+	.nav-items a {
+		padding: 1px 20px;
+
+		/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+	}
+}
+@media (min-width: 992px) {
+	body {
+		font-size: 1.6rem;
+		background-color: lightblue;
+	}
+
+	.o-diecie {
+		/*Napis kalkulator kalorii*/
+		padding: 5px 5px;
+		font-style: bold;
+		text-align: center;
+		font-size: 4rem;
+		color: red;
+	}
+
+	.opis-diety-info {
+		/*informacje pod  O MNIE*/
+		margin-bottom: 10px;
+		margin-top: 5px;
+		font-size: 2.2rem;
+		padding: 10px 10px;
+		line-height: 1.6;
+		text-indent: 20px;
+		color: black;
+	}
+
+	.container {
+		max-width: 800px;
+		margin: 3rem auto;
+		background-color: #003566;
+		padding: 2rem;
+		border-radius: 16px;
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+	}
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
