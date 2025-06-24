@@ -158,11 +158,20 @@ ul {
 	font-style: italic;
 	font-weight: bold;
 }
+
+	footer {
+		padding: 10px 10px;
+		text-align: center;
+		background-color: #14213d;
+		color: #fff;
+		font-style: normal;
+		margin-top: 50px;
+	}
 /* -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media (min-width: 320px) {
 	body {
 		font-size: 1rem;
-		background-color: rgb(24, 130, 165);
+		background-color: lightgray
 	}
 
 	.o-diecie {
@@ -214,29 +223,29 @@ ul {
 		position: sticky;
 		top: 0;
 		z-index: 10;
-		height: 40px;
+		height: 30px;
 		background-color: #14213d;
 		text-align: center;
-		line-height: 40px;
+		line-height: 30px;
 		margin-bottom: 10px;
 	}
 
 	.nav-items a {
-		padding: 0.5px 2.8px;
+		padding: 0.5px 3.8px;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: bold;
 		color: #fff;
 		letter-spacing: 0.6px;
 		transition: color 300ms;
-		font-size: 0.9rem;
+		font-size: 1rem;
 	}
 }
 /* -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media (min-width: 768px) {
 	body {
 		font-size: 1.6rem;
-		background-color: lightcoral;
+		background-color: lightgray
 	}
 
 	.o-diecie {
@@ -282,8 +291,20 @@ ul {
 	.result {
 		font-size: 1.8rem;
 	}
+
+	nav {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		height: 40px;
+		background-color: #14213d;
+		text-align: center;
+		line-height: 40px;
+		margin-bottom: 10px;
+	}
 	.nav-items a {
 		padding: 1px 20px;
+		font-size: 1.6rem;
 
 		/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 	}
@@ -291,7 +312,7 @@ ul {
 @media (min-width: 992px) {
 	body {
 		font-size: 1.6rem;
-		background-color: lightblue;
+		background-color: lightgray
 	}
 
 	.o-diecie {
