@@ -126,7 +126,7 @@ h3 {
 }
 
 .example{
-	width: auto;
+	width: 30rem;
 	margin: auto 3rem;
 	background-color: #fff;
 	
@@ -296,7 +296,7 @@ ul {
 		position: sticky;
 		top: 0;
 		z-index: 10;
-		height: 40px;
+		height: 30px;
 		background-color: #14213d;
 		text-align: center;
 		line-height: 40px;
